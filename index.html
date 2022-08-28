@@ -119,11 +119,11 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/asare.sethuk@email.com" method="POST" >
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
+                    <form action="./contact__form.php" method="POST" >
+                        <input type="text" required name="contact_name" placeholder="Name" class="contact__input">
+                        <input type="email" required  name="contact_email" placeholder="Email" class="contact__input">
+                        <textarea name="contact_text" required id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" value="Submit" class="contact__button button">
                     </form>
                 </div>
             </section>
